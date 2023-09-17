@@ -10,6 +10,8 @@ $(function () {
       var getID = $(this).attr('id');
       var getInput = $(this).children('textarea').val();
       localStorage.setItem(getID, JSON.stringify(getInput.trim()));
+      $('#save-result').text('Appointment Added to localstorage✔️');
+      $('#save-result').removeClass('d-none');
     }
   }
 
